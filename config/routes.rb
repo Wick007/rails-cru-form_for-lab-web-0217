@@ -1,6 +1,45 @@
 Rails.application.routes.draw do
+  # get 'genres/index'
+  #
+  # get 'genres/show'
+  #
+  # get 'genres/new'
+  #
+  # get 'genres/create'
+  #
+  # get 'genres/edit'
+  #
+  # get 'genres/update'
+  #
+  # get 'songs/index'
+  #
+  # get 'songs/show'
+  #
+  # get 'songs/new'
+  #
+  # get 'songs/create'
+  #
+  # get 'songs/edit'
+  #
+  # get 'songs/update'
+  #
+  # get 'artists/index'
+  #
+  # get 'artists/show'
+  #
+  # get 'artists/new'
+  #
+  # get 'artists/create'
+  #
+  # get 'artists/edit'
+  #
+  # get 'artists/update'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+  resources :artists, :songs, :genres
+  # resources :songs
+  # resources :genres
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
